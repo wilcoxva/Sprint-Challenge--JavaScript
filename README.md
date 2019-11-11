@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+The main difference between them is that map accumulates all of the results into a collection, whereas foreach returns nothing. map is usually used when you want to transform a collection of elements with a function, whereas foreach simply executes an action for each element.
+
 2. What is the difference between a function and a method?
+
+Functions are called independently while an instance or object is used to call methods.
 
 3. What is closure?
 
+ A closure is a function having access to the parent scope, even after the parent function has closed.
+
 4. Describe the four rules of the 'this' keyword.
 
+When in the global scope, the value of “this” will be the window/console Object;
+Whenever a function is called by a preceding dot, the object before that dot is this.
+Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+Whenever JavaScript’s call or apply method is used, this is explicitly defined.
+
 5. Why do we need super() in an extended class?
+
+The super keyword is used to access and call functions on an object's parent.
 
 ## Project Set up
 
@@ -64,17 +77,17 @@ Your finished project must include all of the following requirements:
 
 **Pro tip for this challenge: If something seems like it isn't working locally, copy and paste your code up to codepen and take another look at the console.**
 
-## Task 1: Objects and Arrays
+<!-- ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully! -->
 
-## Task 2: Functions
+<!-- ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
-* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
+* [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully! -->
 
-## Task 3: Prototypes
+<!-- ## Task 3: Prototypes
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
+* [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully! -->
 
 ## Task 4: Classes
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
